@@ -1,0 +1,1 @@
+let numero =parseInt(prompt("Dime un numero, ha de ser mayor o igual a 1"));
