@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Act 4.3</title>
+	<script type="text/javascript" src="ej4_3V2.js" defer></script>
+	<style type="text/css">
+		.textoRojo{
+			font-weight: bold;
+			color: red;
+		}
+
+		.textoVerde{
+			font-weight: bold;
+			color: green;
+		}
+
+		.textoAzul{
+			font-weight: bold;
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<form>
+		<label>Mi Deporte Fav</label> <input type="text" id="deporte">
+		<br>
+		<label>Mi Serie Fav</label> <input type="text" id="serie">
+		<br>
+		<label>Mi Pelicula Fav</label> <input type="text" id="pelicula">
+	</form>
+
+	<input type="button" name="aceptarAficiones" value=" aceptarAficiones" onclick="pintarRespuesta()">
+	<br>
+
+	<h2> Mis Aficiones</h2>
+	<div>
+		<p class="textoRojo" id="pDeportes">Mi Deporte Fav?</p>
+	
+		<p class="textoRojo" id="pSeries">Mi Serie Fav?</p>
+		
+		<p class="textoRojo" id="pPelis">Mi Peli Fav?</p>
+	</div>
+</body>
+</html>
