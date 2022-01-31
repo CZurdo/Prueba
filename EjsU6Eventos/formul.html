@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ejerFormularios</title>
+	<script type="text/javascript" src="apuntesform.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="ej4.css">
+</head>
+<body>
+
+	<h2> Formulario</h2>
+	<form id="idformu">
+		<label for="idTexto">texto</label> <input type="text" name="texto" id="idTexto"><br>
+		<label for="idTexto2">textoRellenarConPrompt</label> <input type="text" name="texto" id="idTexto2"><br>
+		<label for="idNumeros">number</label> <input type="number" name="numeros" id="idNumeros"><br>
+		<label for="idPass">pass</label> <input type="password" name="pass" id="idPass"><br>
+		<label for="idOculto">hidd</label> <input type="hidden" name="oculto" id="idOculto"><br>
+
+		<label for="idArea">text area</label><br> <textarea id="idArea" rows="4" cols="50"></textarea><br>
+
+		<label for="idBuscador">datalist buscadores  </label><input list="buscador" name="myBrowser" id="idBuscador"/>
+			<datalist id="buscador">
+			  <option value="Chrome">
+			  <option value="Firefox">
+			  <option value="Internet Explorer">
+			  <option value="Opera">
+			  <option value="Safari">
+			  <option value="Microsoft Edge">
+			</datalist><br>
+
+		<label for="idSel">Select</label><select  name="sel" id="idSel">
+			<option value="value1">Value 1</option>
+ 		 	<option value="value2" selected>Value 2</option>
+ 			<option value="value3">Value 3</option>
+		</select><br>
+
+		<label >Selecciona tu sexo:</label>
+		<label for="idRadioH">H</label><input type="radio" name="radio" id="idRadioH" value="hombre">
+		<label for="idRadioM">M</label><input type="radio" name="radio" id="idRadioM" value="mujer"><br>
+
+		<label for="idCkboxA">Aceitunas</label><input type="checkbox" name="ckboxAceitunas" id="idCkboxA" value="aceitunotas"><br>
+		<label for="idCkboxP">Patatas</label><input type="checkbox" name="ckboxPatatas" id="idCkboxP" value="patatitas"><br>
+		<br>
+
+		<div id="disponibilidad">
+			<h4>Marca los dias que estas disponible</h4>
+			<label for="lunes">lunes</label><input type="checkbox"  id="lunes" value="lunes"><br>
+			<label for="martes">martes</label><input type="checkbox"  id="martes" value="martes"><br>
+			<label for="miercoles">miercoles</label><input type="checkbox"  id="miercoles" value="miercoles"><br>
+			<label for="jueves">jueves</label><input type="checkbox"  id="jueves" value="jueves"><br>
+			<label for="viernes">viernes</label><input type="checkbox"  id="viernes" value="viernes"><br>
+
+			<label for="idDiaPref"> El dia preferente</label><select  name="sel" id="idDiaPref">
+				<option value="" id="vPref"></option>
+			</select><br>
+		</div>
+
+		<div id="colorfondo">
+			<h4>Elige tu color de fondo</h4>
+			<label for="rojo">rojo</label><input type="checkbox"  id="rojo" value="tomato"><br>
+			<label for="salmon">salmon</label><input type="checkbox"  id="salmon" value="salmon"><br>
+			<label for="rosa">rosa</label><input type="checkbox"  id="rosa" value="pink"><br>
+			<label for="verde">verde</label><input type="checkbox"  id="verde" value="green"><br>
+			<label for="azul">azul</label><input type="checkbox"  id="azul" value="skyblue"><br>
+		</div>
+		<br>
+		<label for="idCorreo">email</label><input type="email" name="correo" id="idCorreo"><br>
+		<label for="idFecha">fecha</label><input type="date" name="date" id="idFecha"><br>
+		<label for="idColor">color</label><input type="color" name="color" id="idColor"><br>
+		<label for="idEnviar">envio</label><input type="submit" name="boton" id="idEnviar"><br>
+		<button type="reset">resetear formulario</button>
+	</form>
+	
+	<h3> Aqui se mostrara la info del form</h3>
+</body>

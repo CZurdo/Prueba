@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <script type="text/javascript" src="ej11provincias.js" defer> </script>        
+</head>
+
+<body>
+    <fieldset>
+        <legend>Comunidades y Provincias</legend>
+        <form name="formulario" id="idFormulario" action="#" method="get">
+            
+            <label for="idProvincia">Comunidades:</label>
+            <select name="provincia" id="idProvincia" required>
+                <option value="0" selected="selected">Seleccione Comunidad</option>
+                               
+            </select>            
+            <spam id="idProvinciaError" class="errorSpam"></spam>
+            <br>      
+            <br>  
+            <label for="idCiudad">Ciudad:</label>
+            <select name="provincia" id="idCiudad" required>
+                <option value="0" selected="selected">Seleccione Ciudad</option>
+                                
+            </select>            
+            <spam id="idCiudadError" class="errorSpam"></spam>
+            <br>      
+            <br>           
+            <input type="reset" name="limpiar" id="idLimpiar" value="Limpiar" />
+            <input type="submit" name="enviar" id="idEnviar" value="Enviar" />
+        </form>
+    </fieldset>
+</body>
+</html>
