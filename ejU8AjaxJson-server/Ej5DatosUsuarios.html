@@ -1,0 +1,33 @@
+<html lang="es">
+
+	<head>
+		<title> Datos usuarios</title>
+		<script type="text/javascript" src="ej5DatosU.js" defer></script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Rellena los datos</h1>
+		<form id="idform" method="GET" action="Ej5DatosUsuarios.html">
+			<p> Nombre</p>
+			<input type="text" name="nombre" id="idnombre" required=>
+			<br>
+			<p> Apellido</p>
+			<input type="text" name="apellido" id="idapellido" required>
+			<br>
+			<p> Dni</p>
+			<input type="text" name="dni" id="iddni" required pattern="(\d{8}[A-Z]$)" placeholder="XXXXXXXXA">
+			<br>
+			<p> Aficiones</p>
+			<input type="text" name="aficiones" id="idaficiones" placeholder="futbol,nadar,correr" required>
+			<br>
+			<br>
+			<input type="button" name="añadir" id="idañadir" value="Añadir Usuario">
+			<input type="button" name="borrar" id="idborrar" value="Borrar Usuario">
+			<input type="button" name="editar" id="ideditar" value="Editar Usuario">
+		</form>
+
+		<div id="idResultado"> Aqui saldrá el resultado</div>
+		<div id="idResultadoDni"> </div>
+		
+	</script></body>
+</html>
